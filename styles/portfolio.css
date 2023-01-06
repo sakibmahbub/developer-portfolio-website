@@ -23,6 +23,7 @@
   background-image: url(../images/header_bg.png), url(../images/developer.png);
   background-repeat: no-repeat;
   background-position: bottom right, left;
+  padding: 50px 200px;
 }
 
 /* Header and Navigation Area Styles */
@@ -30,7 +31,6 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0 200px;
-  padding-top: 50px;
 }
 nav ul {
   display: flex;
