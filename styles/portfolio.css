@@ -185,7 +185,8 @@ section {
 }
 
 .contact input[type="text"],
-input[type="email"], textarea {
+input[type="email"],
+textarea {
   width: 100%;
   border: 0;
   border-radius: 5px;
@@ -197,7 +198,54 @@ input {
   height: 64px;
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .banner,
+  .skills-container,
+  .resume-content,
+  .contact {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  .banner {
+    margin: 0 20px;
+  }
+  .banner img {
+    width: 350px;
+  }
+  .header {
+    background-image: none;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .about,
+  .contact {
+    padding: 20px;
+  }
+  .about-info-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-info-container {
+    padding: 0 0 0 5px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .resume-content {
+    padding-inline-start: 30px;
+  }
+  .about,
+  .contact {
+    padding: 20px;
+    gap: 10px;
+  }
+  .contact {
+    flex-direction: column;
+  }
 }
